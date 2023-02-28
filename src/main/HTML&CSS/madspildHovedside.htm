@@ -39,16 +39,11 @@
 }
 
 .column.side {
-    width: 33%;
-    /*Backround-color skal fjernes. Den er der midlertidigt for test*/
-    background-color: #ffb9b9;
-    height: auto;
+    width: 33%;    
 }
 
 .column.middle{
     width: 50%;
-    /*Backround-color skal fjernes. Den er der midlertidigt for test*/
-    background-color: aquamarine;
     height: auto;
 }
 
@@ -63,14 +58,13 @@ ul.side {
     margin-top: 17%;
     margin-left: 25%;
     padding: 10px;
-    overflow: hidden;
     background-color: #dfdfdf;
     width: 40%;
     height: auto;
     border-radius: 25px;
     position: sticky;
     position: -webkit-sticky;
-    nav-left: 0;
+    top: 80px;
 }
 
 ul.side li a.side {
@@ -126,9 +120,10 @@ ostehapser lige nu.
     </div>
 </div>
 
+
 <div class="row">
     <!-- Link Menu på venstre side -->
-    <div class="column side">
+    <div class="column side" id="column2">
         <ul class="side">
             <li class="side"><a class="side" href="#link6">link6</a></li>
             <li class="side"><a class="side" href="#link7">Link7</a></li>
@@ -141,7 +136,7 @@ ostehapser lige nu.
     </div> <!-- Slut på venstreside -->
     
     <!-- Artikler i midten af skærmen -->
-    <div class="column middle">
+    <div class="column middle" id="column1">
         <article>
             <h2>Sabaton</h2>
             <p>Sabaton is a Swedish heavy metal band from Falun, Sweden. 
@@ -185,13 +180,16 @@ ostehapser lige nu.
                 Sabaton has been referred to as one of the "big four" power metal bands, along with Helloween, Blind Guardian and DragonForce. 
                 They are one of the most successful metal bands in Swedish history.</p><br>
                 <a class="readMore" href="#link5" title="Snydt">Læs mere</a>
-        </article>
-
-
-
-
+        </article> <br> <br>
     </div><!-- Slut på midten -->    
 </div>
+
+<script>
+    const column1 = document.querySelector('#column1');
+    const column2 = document.querySelector('#column2');
+    const column1Height = column1.offsetHeight;
+    column2.style.height = `${column1Height}px`;
+</script>
 
 <!-- Footer -->
 <div class="footer">

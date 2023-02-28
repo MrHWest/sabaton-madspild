@@ -4,12 +4,17 @@
     <link rel="stylesheet" href="madspild.css" >
     <title>Madspild</title>
     <link rel="icon" type="image/x-fcon" href="https://www.freeiconspng.com/thumbs/apple-png/red-fresh-shiny-apple-png-0.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
+    body {
+        margin:0;
+    }
+
     .box {
     display: flex;
     height:auto;
     max-width: auto;
-    background-color: #b1b1b1;
+    background-color: #dfdfdf;
     padding: 0px;
     margin: auto;
 }
@@ -36,6 +41,55 @@
   display: table;
   clear: both;
 }
+
+.column.side {
+    width: 33%;
+    /*Backround-color skal fjernes. Den er der midlertidigt for test*/
+    background-color: #ffb9b9;
+    height: auto;
+}
+
+.column.middle{
+    width: 50%;
+    /*Backround-color skal fjernes. Den er der midlertidigt for test*/
+    background-color: aquamarine;
+    height: auto;
+}
+
+.side a:hover{
+    background-color: rgb(92, 92, 92);
+    color:aliceblue;
+    border-radius: 25px;
+}
+
+ul.side {
+    list-style-type: none;
+    margin-top: 17%;
+    margin-left: 25%;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #dfdfdf;
+    width: 40%;
+    height: auto;
+    border-radius: 25px;
+    position: sticky;
+    position: -webkit-sticky;
+    nav-left: 0;
+}
+
+ul.side li a.side {
+    display: block;
+    color: rgb(0, 0, 0);
+    padding: 10px 12px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+li.side {
+    float: center;
+    align-content: center;
+}
+
 </style>
 
 </head>
@@ -45,17 +99,17 @@
 
 <ul class="top">
 <li class="top" style="float:left;margin-top:8px;margin-left:8px;margin-right:8px;"><img src="https://cdn.freebiesupply.com/images/large/2x/steam-logo-transparent.png" alt="logo" style="width:40px;height:40px;"></li>
-<li class="top"><a class="top" href="#link1">link1</a></li>
-<li class="top"><a class="top" href="#link2">link2</a></li>
-<li class="top"><a class="top" href="#link3">link3</a></li>
-<li class="top"><a class="top" href="#link4">link4</a></li>
+<li class="top"><a class="top" href="#link1" style="float:center;">link1</a></li>
+<li class="top"><a class="top" href="#link2" style="float:center;">link2</a></li>
+<li class="top"><a class="top" href="#link3" style="float:center;">link3</a></li>
+<li class="top"><a class="top" href="#link4" style="float:center;">link4</a></li>
 <li class="top" style="float: right"><a class="top" id="login" href="#link5" >Login</a></li>
 </ul>
 
 <br> <br>
 
 <div class="row">
-    <div class="column" style="background-color: #b1b1b1;">
+    <div class="column" style="background-color: #dfdfdf;">
         <h1 style="padding:10px;">Madspils</h1>
         <pre style="font-size: 30px; padding: 10px;">
 Det her er noget fylde text 
@@ -65,7 +119,7 @@ Jeg kunne virkelig godt spise nogle
 ostehapser lige nu.   
 
 
-<a class="readMore" href="#link5">Læs mere</a>
+<a class="readMore" href="#link5" title="Snydt">Læs mere</a>
             </pre>
         </div>
         <div class="column";>
@@ -74,22 +128,90 @@ ostehapser lige nu.
     </div>
 </div>
 
+<div class="row">
+    <!-- Link Menu på venstre side -->
+    <div class="column side">
+        <ul class="side">
+            <li class="side"><a class="side" href="#link6">link6</a></li>
+            <li class="side"><a class="side" href="#link7">Link7</a></li>
+            <li class="side"><a class="side" href="#link8">Link8</a></li>
+            <li class="side"><a class="side" href="#link9">Link9</a></li>
+            <li class="side"><a class="side" href="#link10">Link10</a></li>
+            <li class="side"><a class="side" href="#link11">Link11</a></li>
+        </ul>
+        
+    </div> <!-- Slut på venstreside -->
+    
+    <!-- Artikler i midten af skærmen -->
+    <div class="column middle">
+        <article>
+            <h2>Sabaton</h2>
+            <p>Sabaton is a Swedish heavy metal band from Falun, Sweden. 
+            The vast majority of their albums are written about historical events, mainly wars and significant battles.
+            Sabaton has been referred to as one of the "big four" power metal bands, along with Helloween, Blind Guardian and DragonForce. 
+            They are one of the most successful metal bands in Swedish history.</p><br>
+            <a class="readMore" href="#link5" title="Snydt">Læs mere</a>
+        </article>
+
+        <article>
+            <h2>Sabaton</h2>
+            <p>Sabaton is a Swedish heavy metal band from Falun, Sweden. 
+            The vast majority of their albums are written about historical events, mainly wars and significant battles.
+            Sabaton has been referred to as one of the "big four" power metal bands, along with Helloween, Blind Guardian and DragonForce. 
+            They are one of the most successful metal bands in Swedish history.</p><br>
+            <a class="readMore" href="#link5" title="Snydt">Læs mere</a>
+        </article>
+
+        <article>
+            <h2>Sabaton</h2>
+            <p>Sabaton is a Swedish heavy metal band from Falun, Sweden. 
+                The vast majority of their albums are written about historical events, mainly wars and significant battles.
+                Sabaton has been referred to as one of the "big four" power metal bands, along with Helloween, Blind Guardian and DragonForce. 
+                They are one of the most successful metal bands in Swedish history.</p><br>
+                <a class="readMore" href="#link5" title="Snydt">Læs mere</a>
+        </article>
+
+        <article>
+            <h2>Sabaton</h2>
+            <p>Sabaton is a Swedish heavy metal band from Falun, Sweden. 
+                The vast majority of their albums are written about historical events, mainly wars and significant battles.
+                Sabaton has been referred to as one of the "big four" power metal bands, along with Helloween, Blind Guardian and DragonForce. 
+                They are one of the most successful metal bands in Swedish history.</p><br>
+                <a class="readMore" href="#link5" title="Snydt">Læs mere</a>
+        </article>
+
+        <article>
+            <h2>Sabaton</h2>
+            <p>Sabaton is a Swedish heavy metal band from Falun, Sweden. 
+                The vast majority of their albums are written about historical events, mainly wars and significant battles.
+                Sabaton has been referred to as one of the "big four" power metal bands, along with Helloween, Blind Guardian and DragonForce. 
+                They are one of the most successful metal bands in Swedish history.</p><br>
+                <a class="readMore" href="#link5" title="Snydt">Læs mere</a>
+        </article>
 
 
 
-<a href="#link6" style="float:left;">link box</a>
-<article>
-<h2>Sabaton</h2>
-<pre>       Sabaton is a Swedish heavy metal band from Falun, Sweden. 
-    The vast majority of their albums are written about historical events, mainly wars and significant battles.
-    Sabaton has been referred to as one of the "big four" power metal bands, along with Helloween, Blind Guardian and DragonForce. 
-    They are one of the most successful metal bands in Swedish history.
-</pre>
-</article>
 
+    </div><!-- Slut på midten -->    
+</div>
 
+<!-- Footer -->
+<div class="footer">
+    <table style="justify-content: space-evenly; text-align: center;">
+        <tr>
+            <th>Game</th>
+            <th>Karakter</th>
+        </tr>
+        <tr>
+            <td>Yakuza</td>
+            <td>Kiryu Kazuma</td>
+        </tr>
+    </table>
+<p>Footer</p>
+<p>Det her er noget tekst </p>
+<p>det her et tekst 2</p>
 
-<div class="footer"><p>Footer</p></div>
+</div>
 
 </body>
 </html>

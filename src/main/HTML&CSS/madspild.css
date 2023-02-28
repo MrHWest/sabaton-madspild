@@ -12,8 +12,7 @@ ul.top {
   
   li.top {
     float: left;
-    
-
+    align-content: center;
 }
   
   li a.top {
@@ -23,21 +22,22 @@ ul.top {
     padding: 16px 18px;
     text-decoration: none;
     font-size: 24px;
-
 }
 
-li a:hover {
+.top a:hover {
     background-color: #32a123;
 }
 
 #login {
     background-color: #32a123;
     color: white;
+    
 }
 
 #login:hover {
-    background-color: aqua;
+    background-color: rgb(0, 255, 76);
     color: black;
+    
 }
 
 div.tekst{
@@ -64,25 +64,32 @@ div.sticky {
 }
 
 .readMore{
-    background-color: black;
+    background: black;
     color: white;
     font-size: 20px;
     height: 50px;
     width: 40%;
-    padding: 12px 90px 12px 12px
+    padding: 12px 90px 12px 12px;
+    border-radius: 25px;
+    text-decoration: none;
+    
+}
+
+.readMore:hover{
+    background-color: #6d6d6d;
 }
 
 article {
-    float: center;
     padding: 20px;
-    width: 70%;
+    width: 75%;
     background-color: #ffffff;
 }
 
 .footer {
     background-color: rgb(59, 59, 59);
-    color:  white;
+    color:  rgb(207, 207, 207);
     text-align: center;
-    margin-top: 20px;
-    
+    margin-top: 10px;
+    max-height: auto;
+    padding: 10px;
 }

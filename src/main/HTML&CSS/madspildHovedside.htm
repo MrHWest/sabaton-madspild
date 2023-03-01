@@ -31,7 +31,6 @@
     height: 450px;
 }
 
-/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
@@ -39,7 +38,9 @@
 }
 
 .column.side {
-    width: 33%;    
+    width: 33%;   
+    /*background-color: aquamarine;*/ 
+    /*height:1250px;*/
 }
 
 .column.middle{
@@ -102,17 +103,17 @@ li.side {
 
 <div class="row">
     <div class="column" style="background-color: #dfdfdf;">
-        <h1 style="padding:10px;">Madspils</h1>
-        <pre style="font-size: 30px; padding: 10px;">
-Det her er noget fylde text 
-jeg lige hurtigt har skrevet.
-        
-Jeg kunne virkelig godt spise nogle 
-ostehapser lige nu.   
+        <h1 style="padding:10px; margin-left: 15px;"><br>Madspils</h1>
+        <p style="font-size: 30px; padding: 10px; margin-left: 15px;">
+        Det her er noget fylde text jeg lige hurtigt har skrevet.<br>
+        82nd all the way er den bedste sabaton sang.</p>
+        <p style="font-size: 30px; padding: 10px; margin-left: 15px;">Jeg kunne virkelig godt spise nogle 
+        ostehapser lige nu.<br>
+        hvis du ikke er enig med det, så lad os tag den på motorvejen</p>
 
 
-<a class="readMore" href="#link5" title="Snydt">Læs mere</a>
-            </pre>
+<a class="readMore" href="#link5" title="Snydt" style="margin-top: 50px; margin-left: 50px;">Læs mere</a>
+            </p>
         </div>
         <div class="column";>
             <img src="https://cdn.britannica.com/36/123536-050-95CB0C6E/Variety-fruits-vegetables.jpg">
@@ -194,21 +195,32 @@ ostehapser lige nu.
 
 <!-- Footer -->
 <div class="footer">
-    <table style="justify-content: space-evenly; text-align: center;">
-        <tr>
-            <th>Game</th>
-            <th>Karakter</th>
-        </tr>
-        <tr>
-            <td>Yakuza</td>
-            <td>Kiryu Kazuma</td>
-        </tr>
-    </table>
-<p>Footer</p>
-<p>Det her er noget tekst </p>
-<p>det her et tekst 2</p>
-
+    <div class="container">
+        <ul class="list">
+            <li><h4>STOP MADSPILD</h4></li>
+            <li><p>Primo Vistoria 666</p></li>
+            <li><p>2350 København</p></li>
+            <br>
+            <li><p>Email: post@post.dk</p></li>
+            <li><p>Telefon: 70123456</p></li>
+        </ul>
+        <ul class="list">
+            <li><h4>ÅBNINGSTIDER:</h4></li>
+            <br>
+            <li>Man-Fre: Aldrig</li>
+            <li>Lør-Søn: Aldrig</li>
+            <li><br></li>
+            <li><br><br></li>
+        </ul>
+        <ul class="list">
+            <li><h4>FØLG OS:</h4></li>
+            <br>
+            <li><p>Facebook</p></li>
+            <li><p>Twitter</p></li>
+            <li><p>Truth Social</p></li>
+            <li><p>Youtube</p></li>
+        </ul>
+    </div>
 </div>
-
 </body>
 </html>

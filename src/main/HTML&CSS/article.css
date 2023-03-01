@@ -6,7 +6,7 @@
     font-family: 'IBM Plex Mono', monospace;
 }
 
-h1 {
+#content h1 {
     background-color: #ffffff;
     display: inline;
     padding:16px 100px 16px 5px;
@@ -14,4 +14,8 @@ h1 {
 
 #content img {
     max-width: 100%;
+}
+
+.author, .date {
+    font-size: 13px;
 }

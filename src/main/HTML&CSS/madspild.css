@@ -9,6 +9,7 @@ body {
     background-color: rgb(59, 59, 59);
     display: flex;
     overflow: hidden;
+    z-index: 1000;
 }
 ul.top {
     list-style-type: none;

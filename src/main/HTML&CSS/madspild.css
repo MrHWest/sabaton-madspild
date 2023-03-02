@@ -38,6 +38,10 @@ ul.top {
     background-color: #32a123;
 }
 
+.top a.active {
+    background-color: #32a123;
+}
+
 #login {
     background-color: #32a123;
     color: white;

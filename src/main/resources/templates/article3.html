@@ -1,25 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>The Battlefield of Food Waste</title>
     <link rel="icon" type="image/x-fcon" href="https://www.freeiconspng.com/thumbs/apple-png/red-fresh-shiny-apple-png-0.png">
-    <link rel="stylesheet" href="madspild.css" >
-    <link rel="stylesheet" href="article.css" >
+    <link rel="stylesheet" th:href="@{/madspild.css}" href="../static/madspild.css" >
+    <link rel="stylesheet" th:href="@{/article.css}" href="../static/article.css" >
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="header">
-        <a href="madspildHovedside.htm"><img src="https://cdn-icons-png.flaticon.com/512/892/892930.png" alt="logo" style="width:50px;height:50px;margin:5px 0px 0px 10px;justify-content: left;">
-        <ul class="top">
-            <li class="top"><a class="top" href="madspildHovedside.htm">Hjem</a></li>
-            <li class="top"><a class="top" href="info.htm">Om os</a></li>
-            <li class="top"><a class="top" href="kontakt.htm">Kontakt</a></li>
-        </ul>
-        <a id="login" href="login.htm">Login</a>
-    </div>
+<div id="header">
+    <a th:href="@{/}" href="madspildHovedside.html"><img src="https://cdn-icons-png.flaticon.com/512/892/892930.png" alt="logo" style="width:50px;height:50px;margin:5px 0px 0px 10px;justify-content: left;"></a>
+    <ul class="top">
+        <li class="top"><a class="top" th:href="@{/}" href="madspildHovedside.html">Hjem</a></li>
+        <li class="top"><a class="top" th:href="@{/info}" href="info.html">Om os</a></li>
+        <li class="top"><a class="top" th:href="@{/kontakt}" ref="../../HTML&CSS/kontakt.htm">Kontakt</a></li>
+    </ul>
+    <a id="login" th:href="@{/login}" href="login.html">Login</a>
+</div>
 <br />
 <div id="cover-img" style="height:500px;width:100%;background-image: url('https://imgsrv2.voi.id/t7Q7xiLl-KBwvS4Tdn5Fboy8bDLfefFlbTs6jh5vTn4/auto/1200/675/sm/1/bG9jYWw6Ly8vcHVibGlzaGVycy8yMzQ0Mi8yMDIwMTIxNzE2NTMtbWFpbi5jcm9wcGVkXzE2MDgxOTg4MTguanBn.jpg')"></div>
 <div id="content">

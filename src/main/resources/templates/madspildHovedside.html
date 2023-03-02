@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="da">
+<html lang="da" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <link rel="stylesheet" href="madspild.css" >
+    <link rel="stylesheet" th:href="@{/madspild.css}" href="../static/madspild.css" >
     <title>Madspild</title>
     <link rel="icon" type="image/x-fcon" href="https://www.freeiconspng.com/thumbs/apple-png/red-fresh-shiny-apple-png-0.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -91,13 +91,13 @@ li.side {
 <body>
 
 <div id="header">
-    <a href="madspildHovedside.htm"><img src="https://cdn-icons-png.flaticon.com/512/892/892930.png" alt="logo" style="width:50px;height:50px;margin:5px 0px 0px 10px;justify-content: left;">
+    <a th:href="@{/}" href="madspildHovedside.html"><img src="https://cdn-icons-png.flaticon.com/512/892/892930.png" alt="logo" style="width:50px;height:50px;margin:5px 0px 0px 10px;justify-content: left;"></a>
     <ul class="top">
-        <li class="top"><a class="top active" href="madspildHovedside.htm">Hjem</a></li>
-        <li class="top"><a class="top" href="info.htm">Om os</a></li>
-        <li class="top"><a class="top" href="kontakt.htm">Kontakt</a></li>
+        <li class="top"><a class="top active" th:href="@{/}" href="madspildHovedside.html">Hjem</a></li>
+        <li class="top"><a class="top" th:href="@{/info}" href="info.html">Om os</a></li>
+        <li class="top"><a class="top" th:href="@{/kontakt}" ref="../../HTML&CSS/kontakt.htm">Kontakt</a></li>
     </ul>
-    <a id="login" href="login.htm">Login</a>
+    <a id="login" th:href="@{/login}" href="login.html">Login</a>
 </div>
 
 <br> <br>
@@ -113,7 +113,7 @@ li.side {
             at alle har adgang til tilstrækkelig mad.</p>
 
 
-<a class="readMore" href="article0.html" title="Fakta" style="margin-top: 50px; margin-left: 50px;">Læs mere</a>
+<a class="readMore" th:href="@{/article0}" href="article0.html" title="Fakta" style="margin-top: 50px; margin-left: 50px;">Læs mere</a>
             </p>
         </div>
         <div class="column";>
@@ -145,7 +145,7 @@ li.side {
             <h2>Kampen mod madspild: Hvad vi kan gøre?</h2>
             <p>Hvordan kan du redde penge og planeten? Læs om kampen mod madspild og opdag de chokerende fakta om, hvor meget mad der går til spilde. Lær, hvordan du kan reducere dit eget madspild og hjælpe fødevareindustrien til at tage ansvar.</p> 
         <p>Sådan kan du blive en del af løsningen og redde verden en bid ad gangen!</p><br>
-            <a class="readMore" href="article1.html" title="Kampen om mad spild">Læs mere</a>
+            <a class="readMore" th:href="@{/article1}" href="article1.html" title="Kampen om mad spild">Læs mere</a>
         </article>
 
         <article>
@@ -153,7 +153,7 @@ li.side {
             <p>Læs om den frygtelige krig mod madspild og opdag de chokerende fakta om, hvordan vores vaner skader planeten og spilder ressourcer. 
                 Lær, hvordan vi kan tage ansvar og vinde kampen ved at ændre vores vaner og tage små skridt mod en bedre fremtid. 
                 Lad os stå sammen og vinde denne skammelige kamp!</p><br>
-            <a class="readMore" href="article2.html" title="Madspildets pris">Læs mere</a>
+            <a class="readMore" th:href="@{/article2}" href="article2.html" title="Madspildets pris">Læs mere</a>
         </article>
 
         <article>
@@ -161,14 +161,14 @@ li.side {
             <p>Lær, hvordan du kan redde vores planet,
                 Kæmp imod madspild og tag ansvar, <br>
                 Læs vores artikel om kampen mod madspild og vær med i kampen!</p><br>
-                <a class="readMore" href="article3.html" title="Bliv en del af kampen (Engelsk)">Læs mere</a>
+                <a class="readMore" th:href="@{/article3}" href="article3.html" title="Bliv en del af kampen (Engelsk)">Læs mere</a>
         </article>
 
         <article>
             <h2>The Donald Trump Way</h2>
             <p>Vil du spare penge og hjælpe miljøet? </p>
                 <p>Få Donald Trumps tips til at reducere madspild i denne artikel!</p><br>
-                <a class="readMore" href="article4.html" title="Reducing Food Waste - The Donald Trump Way (engelsk)">Læs mere</a>
+                <a class="readMore" th:href="@{/article4}" href="article4.html" title="Reducing Food Waste - The Donald Trump Way (engelsk)">Læs mere</a>
         </article>
 
         <article>
@@ -176,7 +176,7 @@ li.side {
             <p>"Hemmelige teknologier og vilde initiativer: Sådan udrydder vi madspild for evigt!<br>
         Find ud af hvordan du kan være med til at redde planeten og samtidig spare penge på din madbudget.</p>
         <p>Læs med nu og bliv inspireret til at handle!</p><br>
-                <a class="readMore" href="article5.html" title="Fremtidens løsninger og vores ansvar">Læs mere</a>
+                <a class="readMore" th:href="@{/article5}" href="article5.html" title="Fremtidens løsninger og vores ansvar">Læs mere</a>
         </article>
 
         <article>
@@ -185,7 +185,7 @@ li.side {
                 Få indsigt fra verdensberømte eksperter og se hvordan det vil ændre din måde at tænke på mad på. 
                 Dette er det ultimative skridt mod at redde vores planet, og du kan være med på rejsen! </p>
                 <p>Klik her for at opdage det hele.</p><br>
-                <a class="readMore" href="article6.html" title="Arnold Schwarzenegger og Danny DeVito">Læs mere</a>
+                <a class="readMore" th:href="@{/article6}" href="article6.html" title="Arnold Schwarzenegger og Danny DeVito">Læs mere</a>
         </article> <br> <br>
     </div><!-- Slut på midten -->    
 </div>

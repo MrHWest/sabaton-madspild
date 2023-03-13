@@ -1,0 +1,136 @@
+body {
+    padding:0 0 230px 0;
+    margin:0;
+    font-family: 'IBM Plex Mono', monospace;
+    /*position: relative;
+    min-height: 100vh;*/
+}
+#header {
+    height:60px;
+    width:100%;
+    position: fixed;
+    background-color: rgb(59, 59, 59);
+    display: flex;
+    overflow: hidden;
+    z-index: 1000;
+}
+ul.top {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    justify-content: center;
+}
+
+  
+  li.top {
+    float: left;
+    align-content: center;
+}
+
+  
+  li a.top {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 18px;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.top a:hover {
+    background-color: #32a123;
+}
+
+.top a.active {
+    background-color: #32a123;
+}
+
+#login {
+    background-color: #32a123;
+    color: white;
+    text-align: center;
+    padding: 16px 18px;
+    text-decoration: none;
+    font-size: 24px;
+    justify-content: right;
+}
+
+#login:hover {
+    background-color: rgb(192, 192, 192);
+    color: black;
+    
+}
+
+div.tekst{
+    min-width:450px;
+    margin: auto;
+    display:block;
+}
+
+div.tekst h2{
+    text-align: left;
+    font-size: 50px;
+}
+
+div.tekst pre{
+    text-align: center;
+    font-size: 20px;
+}
+
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    left: 0;
+    background-color: #6d6d6d;
+}
+
+.readMore{
+    background: black;
+    color: white;
+    font-size: 20px;
+    height: 50px;
+    width: 40%;
+    padding: 12px 90px 12px 12px;
+    border-radius: 25px;
+    text-decoration: none;
+    
+}
+
+.readMore:hover{
+    background-color: #6d6d6d;
+}
+
+article {
+    padding: 30px;
+    width: 75%;
+    background-color: #ffffff;
+}
+
+.footer {
+    background-color: rgb(59, 59, 59);
+    color:  rgb(207, 207, 207);
+    text-align: center;
+    margin-top: 10px;
+    /*padding: 10px;*/
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.Footercontainer {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .list {
+    display: inline-block;
+    list-style: none;
+    margin: 0 75px;
+    padding: 0;
+    text-align: center;
+  }
+  
+  
+  .list li {
+    margin: 10px 0;
+  }

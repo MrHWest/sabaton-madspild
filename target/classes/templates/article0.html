@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="da" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Fakta</title>
+    <link rel="icon" type="image/x-fcon" href="https://www.freeiconspng.com/thumbs/apple-png/red-fresh-shiny-apple-png-0.png">
+    <link rel="stylesheet" th:href="@{/madspild.css}" href="../static/madspild.css" >
+    <link rel="stylesheet" th:href="@{/article.css}" href="../static/article.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="header">
+    <a th:href="@{/}" href="madspildHovedside.html"><img src="https://cdn-icons-png.flaticon.com/512/892/892930.png" alt="logo" style="width:50px;height:50px;margin:5px 0px 0px 10px;justify-content: left;"></a>
+    <ul class="top">
+        <li class="top"><a class="top" th:href="@{/}" href="madspildHovedside.html">Hjem</a></li>
+        <li class="top"><a class="top" th:href="@{/info}" href="info.html">Om os</a></li>
+        <li class="top"><a class="top" th:href="@{/kontakt}" ref="kontakt.html">Kontakt</a></li>
+    </ul>
+    <a id="login" th:href="@{/login}" href="login.html">Login</a>
+</div>
+<br />
+<div id="cover-img" style="height:500px;width:100%;background-image: url('https://c4.wallpaperflare.com/wallpaper/848/572/54/space-world-planet-earth-wallpaper-preview.jpg')"></div>
+<div id="content">
+    <h1>Fakta om madspild</h1>
+    <br /><br />
+    <p>
+    <span class="date">Sidst opdateret d. 03/03/2023</span><br />
+    <span class="author">Skrevet af: Universet</span>
+    </p>
+    <p>Madspild er et globalt problem, der påvirker både miljøet og økonomien. Her er nogle fakta:</p>
+<ul>
+<li>Omkring en tredjedel af al mad, der produceres til menneskelig konsum, går tabt eller spildes hvert år.</li>
+<li>Madspild bidrager til klimaforandringer, da de enorme mængder mad, der kasseres, medfører unødvendig produktion af drivhusgasser.</li>
+<li>Madspild påvirker også økonomien, da det resulterer i tabte indtægter for producenter og forbrugere og kan øge priserne på mad.</li>
+<li>Udviklingslande har tendens til at opleve større mængder madspild i produktion og distribution, mens spild i forbrugers hjem er mere udbredt i højindkomstlande.</li>
+<li>Meget af det spildte mad er stadig spiseligt og kunne have været brugt til at fodre sultne mennesker i stedet for at gå til spilde.</li>
+</ul>
+<p>For at bekæmpe madspild er det vigtigt at have en holistisk tilgang, der involverer producenter, forhandlere og forbrugere. Vi kan alle bidrage til at mindske madspild ved at planlægge måltider, købe kun hvad vi har brug for, opbevare mad korrekt, være kreative med rester og donere overskydende mad til velgørende organisationer.</p>
+</div>
+<!-- Footer -->
+<div class="footer">
+    <div class="container">
+        <ul class="list">
+            <li><h4>STOP MADSPILD</h4></li>
+            <li><p>Holmens Kanal 2-12</p></li>
+            <li><p>1092 København K.</p></li>
+            <br>
+            <li><p>Email: email@post.dk</p></li>
+            <li><p>Telefon: 70123456</p></li>
+        </ul>
+        <ul class="list">
+            <li><h4>ÅBNINGSTIDER:</h4></li>
+            <br>
+            <li>Man-Fre: Aldrig</li>
+            <li>Lør-Søn: Aldrig</li>
+            <li><br></li>
+            <li><br><br></li>
+        </ul>
+        <ul class="list">
+            <li><h4>FØLG OS:</h4></li>
+            <br>
+            <li><p>Facebook</p></li>
+            <li><p>Twitter</p></li>
+            <li><p>Truth Social</p></li>
+            <li><p>Youtube</p></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+#content {
+    width: 900px;
+    margin:0 auto;
+    position:relative;
+    min-height: 100%;
+    top:-50px;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+#content h1 {
+    background-color: #ffffff;
+    display: inline;
+    padding:16px 100px 16px 5px;
+}
+
+#content img {
+    max-width: 100%;
+}
+
+.author, .date {
+    font-size: 13px;
+}

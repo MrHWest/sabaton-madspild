@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="da" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" th:href="@{/madspild.css}" href="../static/madspild.css" >
+    <title>Madspild</title>
+    <link rel="icon" type="image/x-fcon" href="https://www.freeiconspng.com/thumbs/apple-png/red-fresh-shiny-apple-png-0.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+<style>
+    .box {
+    display: flex;
+    height:auto;
+    max-width: auto;
+    background-color: #dfdfdf;
+    padding: 0px;
+    margin: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 0px;
+  height: 450px;
+}
+
+.column img{
+    width: 100%; 
+    height: 450px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column.side {
+    width: 33%;   
+    /*background-color: aquamarine;*/ 
+    /*height:1250px;*/
+}
+
+.column.middle{
+    width: 50%;
+    height: auto;
+}
+
+.side a:hover{
+    background-color: rgb(92, 92, 92);
+    color:aliceblue;
+    border-radius: 25px;
+}
+
+ul.side {
+    list-style-type: none;
+    margin-top: 17%;
+    margin-left: 25%;
+    padding: 10px;
+    background-color: #dfdfdf;
+    width: 40%;
+    height: auto;
+    border-radius: 25px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 80px;
+}
+
+ul.side li a.side {
+    display: block;
+    color: rgb(0, 0, 0);
+    padding: 10px 12px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+li.side {
+    /*float: center;*/
+    align-content: center;
+}
+
+</style>
+
+</head>
+<body>
+
+<div id="header">
+    <a th:href="@{/}" href="madspildHovedside.html"><img src="https://cdn-icons-png.flaticon.com/512/892/892930.png" alt="logo" style="width:50px;height:50px;margin:5px 0px 0px 10px;justify-content: left;"></a>
+    <ul class="top">
+        <li class="top"><a class="top active" th:href="@{/}" href="madspildHovedside.html">Hjem</a></li>
+        <li class="top"><a class="top" th:href="@{/info}" href="info.html">Om os</a></li>
+        <li class="top"><a class="top" th:href="@{/kontakt}" ref="kontakt.html">Kontakt</a></li>
+    </ul>
+    <a id="login" th:href="@{/login}" href="login.html">Login</a>
+</div>
+
+<br> <br>
+
+<div class="row">
+    <div class="column" style="background-color: #dfdfdf;">
+        <h1 style="padding:10px; margin-left: 15px;"><br>Madspild</h1>
+        <p style="font-size: 20px; padding-left: 10px; margin-left: 15px;">
+            Madspild er et alvorligt problem i dagens samfund. <br>
+            Hvert år smides enorme mængder mad ud, selvom mange mennesker sulter rundt om i verden.</p>
+        <p style="font-size: 20px; padding-left: 10px; margin-left: 15px;">
+            Bekæmpelse af madspild er afgørende for at bevare miljøet og sikre, <br>
+            at alle har adgang til tilstrækkelig mad.</p>
+
+
+<a class="readMore" th:href="@{/article0}" href="article0.html" title="Fakta" style="margin-top: 50px; margin-left: 50px;">Læs mere</a>
+            </p>
+        </div>
+        <div class="column";>
+            <img src="https://www.allrecipes.com/thmb/QxkA5TUJQ93wfLt1z1rhP40fKhY=/1500x2000/filters:no_upscale():max_bytes(150000):strip_icc()/fruit-102087806-cf4121f035a9465aae80fc8c1e4cd299.jpg">
+        </div> 
+    </div>
+</div>
+
+
+<div class="row">
+    <!-- Link Menu på venstre side -->
+    <div class="column side" id="column2">
+        <ul class="side">
+            <li class="side"><p style="text-align: center;">Hvad siger andre om madspild?</p></li>
+            <li class="side"><a class="side" href="https://www.noedhjaelp.dk/madspild" target="_blank">Folkekirkens nødhjælp</a></li>
+            <li class="side"><a class="side" href="https://www.stopspildafmad.dk/" target="_blank">Stop spild af mad</a></li>
+            <li class="side"><a class="side" href="https://altomkost.dk/fakta/madspild/" target="_blank">alt om kost</a></li>
+            <li class="side"><a class="side" href="https://www.greenmatch.dk/blog/2016/08/5-apps-der-er-med-til-at-reducere-madspild" target="_blank">Greenmatch</a></li>
+            <li class="side"><a class="side" href="https://www.usda.gov/foodwaste/faqs" target="_blank">Food Waste Faqs</a></li>
+            <li class="side"><a class="side" href="https://en.wikipedia.org/wiki/Food_loss_and_waste" target="_blank">Wikipedia</a></li>
+            <li class="side"><a class="side" href="https://carpenternyc.com/thoughts/mcdonalds-tackles-food-waste/" target="_blank">How McDonald's tackles food waste</a></li>
+        </ul>
+        
+    </div> <!-- Slut på venstreside -->
+    
+    <!-- Artikler i midten af skærmen -->
+    <div class="column middle" id="column1">
+        <article>
+            <h2>Kampen mod madspild: Hvad vi kan gøre?</h2>
+            <p>Hvordan kan du redde penge og planeten? Læs om kampen mod madspild og opdag de chokerende fakta om, hvor meget mad der går til spilde. Lær, hvordan du kan reducere dit eget madspild og hjælpe fødevareindustrien til at tage ansvar.</p> 
+        <p>Sådan kan du blive en del af løsningen og redde verden en bid ad gangen!</p><br>
+            <a class="readMore" th:href="@{/article1}" href="article1.html" title="Kampen om mad spild">Læs mere</a>
+        </article>
+
+        <article>
+            <h2>Madspildets Pris</h2>
+            <p>Læs om den frygtelige krig mod madspild og opdag de chokerende fakta om, hvordan vores vaner skader planeten og spilder ressourcer. 
+                Lær, hvordan vi kan tage ansvar og vinde kampen ved at ændre vores vaner og tage små skridt mod en bedre fremtid. 
+                Lad os stå sammen og vinde denne skammelige kamp!</p><br>
+            <a class="readMore" th:href="@{/article2}" href="article2.html" title="Madspildets pris">Læs mere</a>
+        </article>
+
+        <article>
+            <h2>Bliv en del af kampen mod madspild!</h2>
+            <p>Lær, hvordan du kan redde vores planet,
+                Kæmp imod madspild og tag ansvar, <br>
+                Læs vores artikel om kampen mod madspild og vær med i kampen!</p><br>
+                <a class="readMore" th:href="@{/article3}" href="article3.html" title="Bliv en del af kampen (Engelsk)">Læs mere</a>
+        </article>
+
+        <article>
+            <h2>The Donald Trump Way</h2>
+            <p>Vil du spare penge og hjælpe miljøet? </p>
+                <p>Få Donald Trumps tips til at reducere madspild i denne artikel!</p><br>
+                <a class="readMore" th:href="@{/article4}" href="article4.html" title="Reducing Food Waste - The Donald Trump Way (engelsk)">Læs mere</a>
+        </article>
+
+        <article>
+            <h2>Kæmp mod madspild: Fremtidens løsninger og vores ansvar</h2>
+            <p>"Hemmelige teknologier og vilde initiativer: Sådan udrydder vi madspild for evigt!<br>
+        Find ud af hvordan du kan være med til at redde planeten og samtidig spare penge på din madbudget.</p>
+        <p>Læs med nu og bliv inspireret til at handle!</p><br>
+                <a class="readMore" th:href="@{/article5}" href="article5.html" title="Fremtidens løsninger og vores ansvar">Læs mere</a>
+        </article>
+
+        <article>
+            <h2>Hvordan aliens, Arnold Schwarzenegger og Danny DeVito har ændret madspildsspillet for altid!</h2>
+            <p>Find ud af den utrolige hemmelighed bag den nye revolutionerende tilgang til at stoppe madspild - du vil ikke tro, hvordan det virker! 
+                Få indsigt fra verdensberømte eksperter og se hvordan det vil ændre din måde at tænke på mad på. 
+                Dette er det ultimative skridt mod at redde vores planet, og du kan være med på rejsen! </p>
+                <p>Klik her for at opdage det hele.</p><br>
+                <a class="readMore" th:href="@{/article6}" href="article6.html" title="Arnold Schwarzenegger og Danny DeVito">Læs mere</a>
+        </article> <br> <br>
+    </div><!-- Slut på midten -->    
+</div>
+
+<!-- Det her er copy paste, da jeg ikke selv kan javaScript og havde brug for denne specefikke funktion -->
+<script>
+    const column1 = document.querySelector('#column1');
+    const column2 = document.querySelector('#column2');
+    const column1Height = column1.offsetHeight;
+    column2.style.height = `${column1Height}px`;
+</script>
+
+<!-- Footer -->
+<div class="footer">
+    <div class="container">
+        <ul class="list">
+            <li><h4>STOP MADSPILD</h4></li>
+            <li><p>Holmens Kanal 2-12</p></li>
+            <li><p>1092 København K.</p></li>
+            <br>
+            <li><p>Email: email@post.dk</p></li>
+            <li><p>Telefon: 70123456</p></li>
+        </ul>
+        <ul class="list">
+            <li><h4>ÅBNINGSTIDER:</h4></li>
+            <br>
+            <li>Man-Fre: Aldrig</li>
+            <li>Lør-Søn: Aldrig</li>
+            <li><br></li>
+            <li><br><br></li>
+        </ul>
+        <ul class="list">
+            <li><h4>FØLG OS:</h4></li>
+            <br>
+            <li><p>Facebook</p></li>
+            <li><p>Twitter</p></li>
+            <li><p>Truth Social</p></li>
+            <li><p>Youtube</p></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
